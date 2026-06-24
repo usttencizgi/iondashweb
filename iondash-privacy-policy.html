@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IONDASH — Privacy Policy / Gizlilik Politikası</title>
+<style>
+  :root{
+    --bg:#0a0e14;
+    --panel:#11161f;
+    --line:#1d2530;
+    --ink:#e6edf3;
+    --muted:#8696a7;
+    --neon:#2de2c4;
+    --neon-dim:#178f7e;
+    --amber:#ffb648;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    padding:0 20px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:56px 0 96px}
+
+  /* header */
+  .brand{
+    display:flex;align-items:center;gap:14px;
+    padding-bottom:28px;border-bottom:1px solid var(--line);margin-bottom:40px;
+  }
+  .logo{
+    width:46px;height:46px;border-radius:11px;flex:none;
+    background:linear-gradient(135deg,var(--neon),var(--neon-dim));
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;color:#04140f;font-size:20px;letter-spacing:-1px;
+    box-shadow:0 0 24px rgba(45,226,196,.35);
+  }
+  .brand h1{font-size:22px;font-weight:700;letter-spacing:.5px}
+  .brand .sub{color:var(--muted);font-size:13px;font-weight:400;letter-spacing:.3px}
+
+  /* language toggle */
+  .lang{display:flex;gap:8px;margin-bottom:36px}
+  .lang button{
+    background:var(--panel);color:var(--muted);
+    border:1px solid var(--line);border-radius:8px;
+    padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;
+    letter-spacing:.5px;transition:all .18s;
+  }
+  .lang button.active{
+    color:var(--neon);border-color:var(--neon-dim);
+    background:rgba(45,226,196,.07);
+  }
+  .lang button:hover{color:var(--ink)}
+
+  .updated{
+    color:var(--muted);font-size:13px;margin-bottom:8px;
+    letter-spacing:.4px;text-transform:uppercase;
+  }
+  .updated b{color:var(--amber);font-weight:600}
+
+  h2{
+    font-size:15px;font-weight:700;color:var(--neon);
+    margin:38px 0 12px;letter-spacing:.6px;
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h2 .n{
+    font-size:12px;color:var(--neon-dim);font-variant-numeric:tabular-nums;
+    border:1px solid var(--neon-dim);border-radius:5px;
+    padding:1px 7px;flex:none;
+  }
+  h3{font-size:14px;font-weight:600;color:var(--ink);margin:18px 0 6px}
+  p{color:#c4d0db;font-size:15px;margin-bottom:12px}
+  ul{margin:8px 0 14px 4px;list-style:none}
+  li{
+    color:#c4d0db;font-size:15px;margin-bottom:9px;padding-left:22px;position:relative;
+  }
+  li::before{
+    content:"";position:absolute;left:4px;top:11px;
+    width:6px;height:6px;border-radius:50%;
+    background:var(--neon-dim);
+  }
+  li b{color:var(--ink);font-weight:600}
+  a{color:var(--neon);text-decoration:none;border-bottom:1px solid var(--neon-dim)}
+  a:hover{color:#fff}
+
+  .lead{
+    background:var(--panel);border:1px solid var(--line);
+    border-left:3px solid var(--neon);border-radius:10px;
+    padding:18px 22px;margin:24px 0 8px;
+  }
+  .lead p{margin:0;color:var(--ink)}
+
+  .foot{
+    margin-top:56px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:13px;line-height:1.9;
+  }
+  .foot b{color:var(--ink)}
+
+  [data-lang]{display:none}
+  [data-lang].show{display:block}
+
+  @media(max-width:520px){
+    .wrap{padding:36px 0 64px}
+    .brand h1{font-size:19px}
+    p,li{font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div class="logo">IO</div>
+    <div>
+      <h1>IONDASH</h1>
+      <div class="sub">by GridApps · Grid Enerji</div>
+    </div>
+  </div>
+
+  <div class="lang">
+    <button id="btn-en" class="active" onclick="setLang('en')">ENGLISH</button>
+    <button id="btn-tr" onclick="setLang('tr')">TÜRKÇE</button>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div data-lang="en" class="show">
+    <div class="updated">Last updated: <b>24 June 2026</b></div>
+
+    <div class="lead">
+      <p>IONDASH is a dashboard and route-planning app for electric vehicles. This policy explains what data the app handles, why, and the choices you have. We keep data collection to the minimum the app needs to work.</p>
+    </div>
+
+    <h2><span class="n">1</span> Who we are</h2>
+    <p>IONDASH is developed and operated by GridApps, a product line of Grid Enerji, based in Bursa, Türkiye. For any privacy questions you can reach us at <a href="mailto:oguzhantar@gmail.com">oguzhantar@gmail.com</a>.</p>
+
+    <h2><span class="n">2</span> Data the app handles</h2>
+
+    <h3>Vehicle data (OBD2)</h3>
+    <p>When you connect to your car's OBD2 adapter over Bluetooth, IONDASH reads live vehicle metrics such as state of charge, power, battery temperature, voltage, range and tire pressure. This data is read directly from your vehicle and processed on your device to display the dashboard.</p>
+
+    <h3>Location</h3>
+    <p>If you use route or charging-stop planning, the app uses your device location to calculate routes and find nearby chargers. Location is used only while you are actively planning or following a route.</p>
+
+    <h3>Account information</h3>
+    <p>If you create an account to use Pro features such as cross-device sync, we store your email address and an account identifier to authenticate you. You can use the core dashboard without an account.</p>
+
+    <h3>Diagnostic data</h3>
+    <p>We may collect anonymous crash reports and basic usage statistics to fix bugs and improve stability. This data is not used to identify you.</p>
+
+    <h2><span class="n">3</span> How your data is stored</h2>
+    <ul>
+      <li><b>On your device:</b> Live vehicle readings and trip data are stored locally on your phone.</li>
+      <li><b>In the cloud (Pro only):</b> If you enable sync, your trip history and settings are stored in Google Firebase under your account so they are available across your devices.</li>
+    </ul>
+
+    <h2><span class="n">4</span> Third-party services</h2>
+    <p>IONDASH uses a small number of trusted providers to function. Each has its own privacy policy:</p>
+    <ul>
+      <li><b>Google Firebase</b> — authentication, cloud sync, crash reporting.</li>
+      <li><b>TomTom</b> — maps, routing and EV charging-stop data when you plan a route.</li>
+    </ul>
+    <p>We do not sell your personal data, and we do not share it with advertisers.</p>
+
+    <h2><span class="n">5</span> Permissions the app requests</h2>
+    <ul>
+      <li><b>Bluetooth:</b> to connect to your OBD2 adapter and read vehicle data.</li>
+      <li><b>Location:</b> required by Android for Bluetooth scanning, and used for route and charger planning.</li>
+      <li><b>Internet:</b> for routing data, account sync and updates.</li>
+    </ul>
+
+    <h2><span class="n">6</span> Your choices and rights</h2>
+    <ul>
+      <li>Use the dashboard without an account — no cloud data is created.</li>
+      <li>Request deletion of your account and synced data at any time by emailing us.</li>
+      <li>Revoke Bluetooth or location permission from your device settings; affected features will simply stop working.</li>
+    </ul>
+
+    <h2><span class="n">7</span> Children</h2>
+    <p>IONDASH is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+    <h2><span class="n">8</span> Changes to this policy</h2>
+    <p>We may update this policy as the app evolves. The "last updated" date above will always reflect the current version, and material changes will be communicated in the app.</p>
+
+    <div class="foot">
+      <b>GridApps · Grid Enerji</b><br>
+      Bursa, Türkiye<br>
+      <a href="mailto:oguzhantar@gmail.com">oguzhantar@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- ============ TÜRKÇE ============ -->
+  <div data-lang="tr">
+    <div class="updated">Son güncelleme: <b>24 Haziran 2026</b></div>
+
+    <div class="lead">
+      <p>IONDASH, elektrikli araçlar için bir gösterge paneli ve rota planlama uygulamasıdır. Bu politika, uygulamanın hangi verileri işlediğini, nedenini ve sahip olduğunuz seçenekleri açıklar. Veri toplama işlemini uygulamanın çalışması için gereken en az düzeyde tutuyoruz.</p>
+    </div>
+
+    <h2><span class="n">1</span> Biz kimiz</h2>
+    <p>IONDASH, Bursa, Türkiye merkezli Grid Enerji'nin ürün hattı olan GridApps tarafından geliştirilir ve işletilir. Gizlilikle ilgili her türlü soru için bize <a href="mailto:oguzhantar@gmail.com">oguzhantar@gmail.com</a> adresinden ulaşabilirsiniz.</p>
+
+    <h2><span class="n">2</span> Uygulamanın işlediği veriler</h2>
+
+    <h3>Araç verisi (OBD2)</h3>
+    <p>Aracınızın OBD2 adaptörüne Bluetooth üzerinden bağlandığınızda IONDASH; şarj durumu, güç, batarya sıcaklığı, gerilim, menzil ve lastik basıncı gibi canlı araç verilerini okur. Bu veri doğrudan aracınızdan okunur ve gösterge panelini görüntülemek için cihazınızda işlenir.</p>
+
+    <h3>Konum</h3>
+    <p>Rota veya şarj durağı planlaması kullanırsanız, uygulama rotaları hesaplamak ve yakındaki şarj istasyonlarını bulmak için cihaz konumunuzu kullanır. Konum yalnızca aktif olarak rota planlarken veya takip ederken kullanılır.</p>
+
+    <h3>Hesap bilgileri</h3>
+    <p>Cihazlar arası senkronizasyon gibi Pro özelliklerini kullanmak için bir hesap oluşturursanız, kimliğinizi doğrulamak amacıyla e-posta adresinizi ve bir hesap kimliğini saklarız. Temel gösterge panelini hesap olmadan kullanabilirsiniz.</p>
+
+    <h3>Tanılama verisi</h3>
+    <p>Hataları düzeltmek ve kararlılığı artırmak için anonim çökme raporları ve temel kullanım istatistikleri toplayabiliriz. Bu veri sizi tanımlamak için kullanılmaz.</p>
+
+    <h2><span class="n">3</span> Verilerinizin saklanması</h2>
+    <ul>
+      <li><b>Cihazınızda:</b> Canlı araç okumaları ve sürüş verileri telefonunuzda yerel olarak saklanır.</li>
+      <li><b>Bulutta (yalnızca Pro):</b> Senkronizasyonu açarsanız, sürüş geçmişiniz ve ayarlarınız, cihazlarınız arasında erişilebilir olması için hesabınız altında Google Firebase'de saklanır.</li>
+    </ul>
+
+    <h2><span class="n">4</span> Üçüncü taraf hizmetleri</h2>
+    <p>IONDASH, çalışmak için az sayıda güvenilir sağlayıcı kullanır. Her birinin kendi gizlilik politikası vardır:</p>
+    <ul>
+      <li><b>Google Firebase</b> — kimlik doğrulama, bulut senkronizasyonu, çökme raporlama.</li>
+      <li><b>TomTom</b> — rota planladığınızda harita, rota ve EV şarj durağı verisi.</li>
+    </ul>
+    <p>Kişisel verilerinizi satmıyoruz ve reklam verenlerle paylaşmıyoruz.</p>
+
+    <h2><span class="n">5</span> Uygulamanın istediği izinler</h2>
+    <ul>
+      <li><b>Bluetooth:</b> OBD2 adaptörünüze bağlanmak ve araç verisini okumak için.</li>
+      <li><b>Konum:</b> Android'in Bluetooth taraması için gerektirdiği izin; ayrıca rota ve şarj planlaması için kullanılır.</li>
+      <li><b>İnternet:</b> rota verisi, hesap senkronizasyonu ve güncellemeler için.</li>
+    </ul>
+
+    <h2><span class="n">6</span> Seçenekleriniz ve haklarınız</h2>
+    <ul>
+      <li>Gösterge panelini hesapsız kullanın — hiçbir bulut verisi oluşturulmaz.</li>
+      <li>Hesabınızın ve senkronize edilen verilerinizin silinmesini istediğiniz zaman e-posta ile talep edin.</li>
+      <li>Bluetooth veya konum iznini cihaz ayarlarınızdan geri çekin; ilgili özellikler yalnızca çalışmayı durdurur.</li>
+    </ul>
+
+    <h2><span class="n">7</span> Çocuklar</h2>
+    <p>IONDASH 13 yaş altı çocuklara yönelik değildir ve onlardan bilerek veri toplamayız.</p>
+
+    <h2><span class="n">8</span> Bu politikadaki değişiklikler</h2>
+    <p>Uygulama geliştikçe bu politikayı güncelleyebiliriz. Yukarıdaki "son güncelleme" tarihi her zaman güncel sürümü yansıtır ve önemli değişiklikler uygulama içinde bildirilir.</p>
+
+    <div class="foot">
+      <b>GridApps · Grid Enerji</b><br>
+      Bursa, Türkiye<br>
+      <a href="mailto:oguzhantar@gmail.com">oguzhantar@gmail.com</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function setLang(l){
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      el.classList.toggle('show', el.getAttribute('data-lang')===l);
+    });
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-tr').classList.toggle('active', l==='tr');
+    document.documentElement.lang = l;
+  }
+</script>
+</body>
+</html>
